@@ -5,4 +5,6 @@
 
     <string name="btnImageChange">그림바꾸기</string>
     <string name="title_activity_inflate">InflateActivity</string>
+    <string name="title_activity_dig">DigActivity</string>
+    <string name="title_activity_anim">AnimActivity</string>
 </resources>

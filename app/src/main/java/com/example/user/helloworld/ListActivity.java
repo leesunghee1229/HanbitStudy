@@ -1,19 +1,25 @@
 package com.example.user.helloworld;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListActivity extends AppCompatActivity {
+public class ListActivity extends Activity {
+//public class ListActivity extends AppCompatActivity {
 
     private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // 다이얼로그로 띄울때 타이틀바 없애기
+
+
         setContentView(R.layout.activity_listview);
 
         mListView = (ListView) findViewById(R.id.listView);

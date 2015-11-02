@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnEnter.setOnClickListener(btnEnterClick);
 
+        Intent intent = new Intent(this, MyService.class);
+        startService(intent);
+
 //        Button btnClickMe = (Button) findViewById(R.id.btnClickMe);
 //        TextView mTxtDisp = (TextView) findViewById(R.id.txtDisp);
 //

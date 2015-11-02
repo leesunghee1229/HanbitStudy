@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다이얼로그1"
+        android:id="@+id/btnDlg1"
+        android:onClick="btnDlg1Click"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다이얼로그2"
+        android:id="@+id/btnDlg2"
+        android:onClick="btnDlg2Click"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다이얼로그3"
+        android:id="@+id/btnDlg3"
+        android:onClick="btnDlg3Click"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다이얼로그4"
+        android:id="@+id/btnDlg4"
+        android:onClick="btnDlg4Click"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="sdfsdfsdflkasjdfklajslfkjsaldfsaldfjlaskfjlsakdjflskdjflksdjflksjdflksjdlfksjdlfkjsldfkjsldkfj"
+        android:id="@+id/textView4"
+        android:background="@drawable/ninetest" />
+</LinearLayout>

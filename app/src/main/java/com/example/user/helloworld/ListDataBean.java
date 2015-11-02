@@ -3,9 +3,10 @@ package com.example.user.helloworld;
 import java.io.Serializable;
 
 /**
- * Created by user on 2015-10-24.
+ * Created by USER on 2015-10-24.
  */
 public class ListDataBean implements Serializable {
+
     private int imgSrc;
     private String title;
     private String contents;
