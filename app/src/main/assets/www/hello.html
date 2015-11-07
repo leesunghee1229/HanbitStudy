@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> title </title>
+</head>
+<body>
+
+<a href="javascript:;" onClick="window.sample.clickOnFace()">
+	<img src="smile.jpg" id="face" alt="" />
+</a>
+
+
+
+<script type="text/javascript">
+//<![CDATA[ 
+function changeFace(flag) {
+	if(flag == 0) {
+		document.getElementById("face").src = "angry.jpg";
+	}
+	else if (flag == 1) {
+		document.getElementById("face").src = "smile.jpg";
+	}
+}
+//]]> 
+</script>
+
+
+
+
+</body>
+</html>
