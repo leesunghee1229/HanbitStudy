@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
 //            intent.setFlags(intent.FLAG_ACTIVITY_NO_HISTORY); // 최초에 설정
 
 //            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|intent.FLAG_ACTIVITY_NO_HISTORY); // 추가로 설정값 더해가면서...
-            startActivityForResult(intent,100);
-//            startActivity(intent);
+//            startActivityForResult(intent,100);
+            startActivity(intent);
 
 //            finish(); // 앱 종료
             /*

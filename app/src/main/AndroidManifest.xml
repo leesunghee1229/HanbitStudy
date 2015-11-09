@@ -76,6 +76,22 @@
         </activity>
         <activity android:name=".WebViewActivity" >
         </activity>
+
+        <!-- GCM Broadcat 등록 -->
+        <receiver
+            android:name=".gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- 메시지 수신 지정 -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.user.helloworld.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".gcm.GCMActivity" >
+        </activity>
     </application>
 
 </manifest>

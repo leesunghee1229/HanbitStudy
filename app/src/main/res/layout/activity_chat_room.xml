@@ -53,11 +53,23 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.7" >
 
-        <EditText
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="New Text"
-            android:id="@+id/edtChatText" />
+            android:id="@+id/scvChatText"
+            android:layout_gravity="center_vertical"
+            android:fillViewport="false">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edtChatText"
+                android:gravity="top"
+                android:singleLine="false"
+                android:editable="false"
+                android:enabled="true"
+                android:textColor="#020202" />
+        </ScrollView>
     </LinearLayout>
 
     <LinearLayout
@@ -95,7 +107,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/edtChat"
                 android:layout_weight="1"
-                android:hint="대화내용입력" />
+                android:hint="대화내용입력"
+                android:singleLine="true" />
         </LinearLayout>
 
         <LinearLayout

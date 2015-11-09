@@ -1,9 +1,11 @@
 package com.example.user.helloworld;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -40,6 +42,9 @@ public class WebViewActivity extends Activity {
         }
 
         mWebview.loadUrl(url);
+
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(mEdtUrl.getWindowToken(), 0);
     }
 
     private class MyWebViewClient extends WebViewClient {
