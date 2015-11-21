@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.helloworld.media.AudioPlayActivity"
+    android:orientation="vertical"
+    android:onClick="onBtnAutdio">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="재생"
+        android:id="@+id/btnPlay"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onBtnAutdio"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중지"
+        android:id="@+id/btnStop"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onBtnAutdio"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="재시작"
+        android:id="@+id/btnRestart"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onBtnAutdio"
+        />
+
+    <MediaController
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/mediaController"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

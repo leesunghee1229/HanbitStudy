@@ -8,6 +8,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--녹화 관련 권한-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -67,6 +73,8 @@
         </activity>
         <activity android:name=".NotiActivity" >
         </activity>
+        <activity android:name=".PullToRefreshListActivity" >
+        </activity>
         <activity android:name=".StartMainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -91,6 +99,16 @@
         </receiver>
 
         <activity android:name=".gcm.GCMActivity" >
+        </activity>
+        <activity android:name=".rest.RestActivity" >
+        </activity>
+        <activity android:name=".media.AudioPlayActivity" >
+        </activity>
+        <activity android:name=".media.VideoActivity" >
+        </activity>
+        <activity android:name=".media.BarcodeActivity" >
+        </activity>
+        <activity android:name=".media.VideoRecActivity" >
         </activity>
     </application>
 
