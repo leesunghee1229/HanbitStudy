@@ -37,5 +37,6 @@ public class GCMActivity extends Activity {
                 }
             }
         }).start();
+
     }
 }
